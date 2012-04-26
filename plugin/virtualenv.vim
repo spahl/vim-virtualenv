@@ -64,7 +64,6 @@ function! s:VirtualEnvActivate(name) "{{{1
         endif
     endif
     if len(name) == 0  "Couldn't figure it out, so DIE
-        call s:Error("No VirtualEnv name given")
         return
     endif
     let bin = g:virtualenv_directory.'/'.name.'/bin'
